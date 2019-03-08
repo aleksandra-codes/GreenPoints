@@ -1,0 +1,45 @@
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD9xG25_0dpoqw_TkBMaPr5pGpD1kjTshU",
+    authDomain: "greenpoints-6d33d.firebaseapp.com",
+    databaseURL: "https://greenpoints-6d33d.firebaseio.com",
+    projectId: "greenpoints-6d33d",
+    storageBucket: "greenpoints-6d33d.appspot.com",
+    messagingSenderId: "1018101604499"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+
+	<h1 id="first">Hello cst, it's Thursday.</h1>
+	<h2 id="second">It's almost Friday!!!!</h2>
+
+	<script>
+		var out = document.getElementById("first");			
+		var dbRef = firebase.database().ref().child("message2"); 
+		dbRef.on(
+			'value',
+// callback function 
+			function(snap) {
+				out.innerText = snap.val();
+			});
+			
+
+		var out = document.getElementById("second");			
+		var dbRef = firebase.database().ref().child("message2"); 
+		dbRef.on(
+			'value',
+// callback function 
+			function(snap) {
+				out.innerText = snap.val();
+			});
+	</script>
+	
+
+</body>
+</html>
