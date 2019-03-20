@@ -1,7 +1,4 @@
 
-# file containing firebase key
-
-ignoreFile.js
 
 .env
 *.exe
