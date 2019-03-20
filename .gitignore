@@ -1,1 +1,4 @@
 ignoreFile.js
+.env
+*.exe
+file.txt
