@@ -18,9 +18,9 @@ body     {  width: 100%; height: 100%; font-family: 'organic_fruitregular'}
             display: flex; flex-direction: column;
 }
 
-#mapimg  {  margin: 30px; background-color: olive; height: 70%;  
+#mapimg  {  margin: 30px; background-color: green; height: 70%;  
             border-radius:20px; border-style: solid; 
-            border-color: darkgreen; border-width: 10px; 
+            border-color: gold; border-width: 10px; 
             display:flex; align-items: center; justify-content: center;
 }
 
