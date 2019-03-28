@@ -1,0 +1,32 @@
+
+  @font-face {
+        font-family: 'organic_fruitregular';
+        src: url('organic_fruit-webfont.woff2') format('woff2'),
+             url('organic_fruit-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+  div.buttons {
+          background: #C4C4C4; border-radius: 40px;  
+          position: absolute; width: 395px; height: 250px; 
+          display: inline-block;}
+
+  div.insides {
+          background: #F5F1F1; left:31px; top:35px;
+          position:absolute; width: 333px; height: 180px; 
+          display: flex; text-align: center; flex-flow: column nowrap;  
+          align-items: center; justify-content:center;}
+
+  span {width: 300px; font-size: 32px; margin-top: 10px; 
+        font-family: 'organic_fruitregular';}
+
+  img {width: 100px; height: 100px;}
+
+  #location {left: 25%; top:20%;}
+
+  #code {right: 25%; top:20%}
+
+  #points {left: 25%; bottom: 20%}
+
+  #account {right: 25%; bottom: 20%}
+
