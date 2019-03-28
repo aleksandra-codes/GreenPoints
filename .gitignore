@@ -1,6 +1,6 @@
 key.js
-
-
+Thumbs.db
+package-lock.json
 .env
 *.exe
 # Logs
