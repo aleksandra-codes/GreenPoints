@@ -1,0 +1,71 @@
+#container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#notif {
+     margin-top: 70px;
+     height: 70px;
+     background-color: green;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: gold;
+     font-family: "organic_fruitregular";
+     font-size: 40px;
+}
+
+#inputCode {    
+     width: 80%;
+     height: 200px;
+     margin: 0 auto;
+     margin-top: 70px;
+     background-color: green;
+     border-radius: 40px;
+     padding: 10px;
+}
+#coder {
+    background-color: #FFFFE0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+#options {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: gold;
+}
+
+.buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;     
+     width: 350px;
+     height: 160px;
+     border-radius: 30px;
+     border-color: darkgreen;
+     border-width:7px;
+     border-style: solid;
+     background-color: green;     
+     font-family: "organic_fruitregular";
+     font-size: 40px;
+     padding: 15px;     
+     margin: 40px;
+} 
+.buttons p {
+     height: 60%;
+     width: 100%;
+     text-align: center;
+}
+
+#redeem {
+    height: 40%;
+}
+#enter {
+     font-size: 75px;
+}
