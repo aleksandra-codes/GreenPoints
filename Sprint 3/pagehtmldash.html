@@ -19,33 +19,33 @@
         WELCOME TO GREEN POINTS!
     </div>
     <div id = "container">
-    <div class = "row">
+    
         <div class = "buttons" id = "location">
         <a href="pagehtmllocation.html">
             <div class = "insides" id = "l1">
                 <img id = "ping" src = "Images/dashlocation.png" alt = "pinger">
-                <span>FIND A LOCATION</span>
+                <div><span>FIND A LOCATION</span></div>
             </div>
         </a>
-    </div>
-      
+
+      </div> 
     <div class = "buttons" id = "code">
       <a href="pageinput.html">
         <div class = "insides" id = "c1">
             <img id = "coder" src = "Images/dashcode.png" alt = "coder">
-            <span>INPUT CODE</span>
+            <div><span>INPUT CODE</span></div>
           </div>
       </a>
     </div>
-    </div>    
+       
     
           
-    <div class = "row">  
+
     <div class = "buttons" id = "points">
         <a href="pagerewards.html">
         <div class = "insides" id = "p1">
             <img id = "reward" src = "Images/rewards.png" alt = "rewarder">
-            <span>REDEEM REWARDS</span>
+            <div><span>REDEEM REWARDS</span></div>
           </div>
         </a>
     </div>
@@ -55,55 +55,12 @@
         <a href="pagehtmlaccount.html">
             <div class = "insides" id = "a1">
                 <img id = "acc" src = "Images/dashaccount.png" alt = "accer">
-                <span>MY ACCOUNT</span>
+                <div><span>MY ACCOUNT</span></div>
             </div>
         </a>
     </div>
-    </div> 
+
     </div>
-<!--
-    <script>
-        
-	// Initialize the FirebaseUI Widget using Firebase.
-	var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
-	var uiConfig = {
-	  callbacks: {
-		signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-		  // User successfully signed in.
-		  // Return type determines whether we continue the redirect automatically
-		  // or whether we leave that to developer to handle.
-		  return true;
-		},
-		uiShown: function() {
-		  // The widget is rendered.
-		  // Hide the loader.
-		  document.getElementById('loader').style.display = 'none';
-		}
-	  },
-	  // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-	  signInFlow: 'popup',
-	  signInSuccessUrl: 'pagehtmldash.html',
-	  signInOptions: [
-		 //Leave the lines as is for the providers you want to offer your users.
-//		firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-//		firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-//		firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-//		firebase.auth.GithubAuthProvider.PROVIDER_ID,
-		firebase.auth.EmailAuthProvider.PROVIDER_ID,
-		//firebase.auth.PhoneAuthProvider.PROVIDER_ID
-	  ],
-	  // Terms of service url.
-	  tosUrl: 'pagehtmldash.html',
-	  // Privacy policy url.
-	  privacyPolicyUrl: 'pagehtmldash.html'
-	};
-	
-	// The start method will wait until the DOM is loaded.
-	ui.start('#firebaseui-auth-container', uiConfig);
-	
-
-      </script>
--->
        <script src="user.js"></script>
   </body>
