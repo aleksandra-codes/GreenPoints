@@ -1,17 +1,16 @@
 (function(){
-    var user = firebase.auth().currentUser;
-    var firebase = firebase-app;
+
+    var firebase = app_firebase;
 
     // for the current user
     // create this user node in the datebase
 
     firebase.auth().onAuthStateChanged(function(user){
-        firebase.database().ref("Users/" + user.uid).update(
+        firebase.database().ref("Users/" + user.displayName).set(
 		{
-        name:user.displayName, 
-         email:user.email,
+         email: user.email, 
+         uid: user.uid,
+         point: 0
         });
     });
-   
-})
-console.log("run");
+})()
