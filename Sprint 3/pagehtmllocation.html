@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>  
       <link rel="stylesheet" type="text/css" href="pagecssnav.css"> 
       <link rel="stylesheet" type="text/css" href="pagecsslocation.css"> 
- 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
     
   <body>
@@ -52,41 +52,57 @@
     </div>  
     <div id="spacing"></div>
     <div id="mbody">
+        <div id="top">
+            <div id="portrait">
+                    <img src="Images/pic.png" width="95%" height="95%">
+            </div>
+
+            <div id="bio">
+                Find recycling depot near you
+            </div>
+        </div>
+        <div id="mapContainer">
         <div id="map">
-            <div id="mapimg">
-                <div id="casing">
-                    <img id = "burn" src = "Images/map.png" alt="mapi" height="100%" width="100%">
-                </div>             
+            <div id="mapimg">                
+                <img id = "burn" src = "Images/map.png" alt="mapi">                
+            </div>
+            <div>
+                <input type="text" id="inputSearch">
             </div>
             <div id="filters">
                 <div class="buttons">
-                <p>NEAR ME</p></div>
+                Near me
+                </div>
                 <div class="buttons">
-                <p>BY CITY</p></div>
+                By city
+                </div>
                 <div class="buttons">
-                <p>RECENTS</p></div>
+                Recents
+                </div>
+            </div>
+            </div>
+            <div id="searchResults">
+                <div id="resultsHead">
+                    Three results found:
+                </div>
+                <div id="address1">
+                        <div id="hmap">Burnaby Eco Center</div>
+                        <div id="desc">3700 Willingdon Ave  Burnaby, BC</div>
+                       <img id = "star" src = "Images/stars.png" alt="mapi"> 
+                </div>
+                  <div id="address1">
+                        <div id="hmap">Brentwood Return-it bottle depot</div>
+                        <div id="desc">3931 Graveley St Burnaby, BC</div>
+                        <img id = "star" src = "Images/stars.png" alt="mapi">
+                </div>
+                  <div id="address1">
+                        <div id="hmap">Regional Recycling Vancouver</div>
+                        <div id="desc">960 Evans Ave Vancouver, BC</div>
+                        <img id = "star" src = "Images/stars.png" alt="mapi">
+                </div>
             </div>
         </div>
-    
-        <div id="picinfo">
-            <div id="top">
-                <div class="opt" id="portrait">
-                    <div id = "casing2">
-                        <img src="Images/pic.png" width="95%" height="95%">
-                    </div>
-                </div>
 
-                <div class="opt" id="bio">
-                    <p>LEAN AND GREEN <br>RECYCLING DEPOT</p>
-                </div>
-            </div>
-            
-            
-            <div class="opt" id="address">
-                <p>3700 WILLINGDON AVE. <br> Burnaby, BC</p>
-            </div>
-                
-        </div>
         
     </div>
    

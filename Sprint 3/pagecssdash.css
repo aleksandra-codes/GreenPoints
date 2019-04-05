@@ -1,4 +1,16 @@
 
+/*
+Color scheme
+primary grey #f7f7f7
+Color hex codes: 
+green dark #316117, 
+light green #90b644, 
+white #ffffff, 
+orange #e98341, 
+light blue #f2fefe. 
+*/
+
+
 @font-face {
     font-family: 'organic_fruitregular';
     src: url('organic_fruit-webfont.woff2') format('woff2'),
@@ -6,59 +18,75 @@
     font-weight: normal;
     font-style: normal;}
 html {
-    width: 100%;
-    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 body {
     width: 100%;
-    height: 100%;
-    background-color:#FFFFE0;
+    margin: 0;
+    background-color: ffffff;
 }
 a {
-    color: green;
+    color: #316117;
     font-weight:bold;
     text-decoration: none;
 }
 #title {
     font-size: 70px;
-    color: green;
+    color:  #316117;
     font-family: 'organic_fruitregular';
-    width: 100%;
+    width: 90%;
     height: 10%;
     text-align: center;
-    padding: 20px;
+    padding: 5%;
     
 }
 #container {
-    display: flex; align-items: center; justify-content: center;
-    flex-direction: column;
-    height: 80%; width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
 }
+/*
 .row {
     display: flex;
     flex-direction: row;
 }
+*/
 div.buttons {
-      background: green; border-radius: 40px;  
-      border-style:solid; border-width: 7px;
-      border-color: darkgreen;
-      width: 395px; height: 250px; 
+      background: #f2fefe; 
+      border-radius: 10px;  
+      border-style:solid; 
+      border-width: 7px;
+      border-color: #90b644;
+      width: 30%; 
+      height: 20vh; 
       display: flex; align-items: center; justify-content: center;
-      margin: 30px;
+/*      align-content: space-around;*/
+      margin: 2vw;
+      min-width: 200px
       
       
 }
 
 div.insides {
-      background: gold; left:31px; top:35px;
-      width: 333px; height: 180px; 
-      display: flex; text-align: center; flex-flow: column nowrap;  
-      align-items: center; justify-content:center;}
+      margin: 5%;
+      text-align: center; 
+      flex-flow: column;  
+}
 
-span {width: 300px; font-size: 32px; margin-top: 10px; 
-    font-family: 'organic_fruitregular';}
+span {  
+        
+        font-size: 32px; 
+        margin-top: 10px; 
+        font-family: 'organic_fruitregular';}
 
-img {width: 100px; height: 100px;}
+img {width: 40%; }
 
 #location {left: 25%; top:20%;}
 

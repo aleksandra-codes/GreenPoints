@@ -1,3 +1,16 @@
+
+
+/*
+Color scheme
+primary grey #f7f7f7
+Color hex codes: 
+green dark #316117, 
+light green #90b644, 
+white #ffffff, 
+orange #e98341, 
+light blue #f2fefe. 
+*/
+
 @font-face {
             font-family: 'organic_fruitregular';
             src: url('organic_fruit-webfont.woff2') format('woff2'),
@@ -8,40 +21,60 @@
 #spacing {
             height:10%; width: 100%;
 }
-        
+       
+#accountPageItems{
+        display: flex;
+        flex-direction: row;
+            flex-wrap: wrap;
+        width: 80%;
+        margin: 0 10% 0 10%;
+}
+/*
 #container{
             width: 100%;
             height: 60%;
             align-items: center;
             margin-left: 15%;
             display: flex;
-            flex-direction: row;
+            
 }
+*/
 
+/*
 #left    {
             width: 20%; height: 60%;
             display: flex; flex-direction: column;
             align-items: center; justify-content: center;
 }
+*/
+#photo{
+            width:10%;
+            height: auto;
+            margin: 5%;
+            display: block;
+    
+}
 #headshot{
             background: headshot.jpg;
             object-fit: contain;
             border-radius:50% 50% 50% 50%;
-            border: 4px solid #939393;
-            width:200px;
-            height:200px;   
-            border-color: green;
+            border: 4px solid #90b644;
+            max-width: 200px; 
 }
 
 #welcomeMessage{
             font-size: 40px;
-            color:green;
+            color: #316117;
             font-family:'organic_fruitregular';
             width: 100%;
             height: 10%;
             display:flex;
-            justify-content: center;
             align-items: center;
+            margin: 2%;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            
 }
 
 table{
@@ -49,7 +82,8 @@ table{
             border: 1px solid #939393;
             border-radius: 7px;
             -moz-border-radius:6px;
-            background-color: #00A800;           
+            background-color: #f2fefe;
+            color: #316117;
 }
 
 #accountTable td:first-child, th:first-child {
@@ -62,7 +96,7 @@ table{
 
 #accountTable td, th {           
             height: 40px;
-            width: 200px;
+            width: 20vh;
             border: hidden;
             text-align: center;
             border-left: 1px solid #939393;
@@ -72,22 +106,38 @@ table{
 #accountTable td:hover{
             color: #939393;
 }
-
+#photoAndpoints{
+            margin: 0 5% 0 5%;
+            align-self: center;
+            justify-content: center;
+    
+}
 fieldset{
             border: hidden;
 }
 
 #recentActivity{
-            height: 250px;
-            width: 30%;
-            border: 7px solid #939393;
-            border-radius: 20px;
-            border-color: green;
-            margin-left: 40px;
+            height: 20%px;
+            width: 40%;
+            border: 7px solid #90b644;
+            border-radius: 10px;
             font-size: 40px;
-            text-align: left;
-            padding: 50px;
-            font-family: arial;
-            color:green;
+            color: #316117;
+            min-width: 300px;
+            margin: 1%;
+            padding: 5%;
         }
-        
+     
+@media( max-width: 500px){
+    #welcomeMessage{
+            font-size: 30px;
+                        
+}
+    
+    #recentActivity{
+
+            font-size: 20px;
+            min-width: 300px;
+
+        }
+}
