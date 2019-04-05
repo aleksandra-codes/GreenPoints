@@ -1,0 +1,65 @@
+
+/*
+Color scheme
+primary grey #f7f7f7
+Color hex codes: 
+dark green #316117, 
+light green #90b644, 
+white #ffffff, 
+orange #e98341, 
+light blue #f2fefe. 
+*/
+
+body {
+     background-color:white;
+}
+ 
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+#textBox {
+    margin: 20px;
+    margin-top: 40px;
+    padding-top: 15px;
+    background-color: #90b644;
+    border-radius: 50px;
+    width: 90%;
+    height: 30%;
+    resize: none;
+    font-size: 110px;
+    text-align: center;
+}
+
+#textBox::placeholder {
+     font-size: 50px;
+     padding-top: 35px;
+}
+ 
+#buttons {
+    display: flex;
+    width: 90%;
+} 
+
+#buttons div, #enter{
+     display: flex;
+     width: 100%;
+     height: 30%;
+     margin: 20px;
+     border-radius: 50px;
+     font-size: 30px;
+     color: #316117;
+     justify-content: center;
+     align-items: center;
+     background-color: #90b644;
+}
+
+#enter {
+    font-size: 70px;
+}
+
+#enter:hover{
+     color: white;
+}
