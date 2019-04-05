@@ -5,7 +5,8 @@
   
     firebase.auth().onAuthStateChanged(function(user){
     
-            var userId = user.uid;		
+            var userId = user.uid;	
+            console.log(userId);
 	  		var dbRef = firebase.database().ref('Users/' + userId).child("point");
 	  		dbRef.on("value", function(snap){
                 let out = document.getElementById("pointers");
@@ -16,6 +17,5 @@
             });
 					
         
-       // };
         });
 }());
