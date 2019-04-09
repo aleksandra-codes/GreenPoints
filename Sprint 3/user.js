@@ -1,15 +1,16 @@
 (function(){
-
+    
     var firebase = app_firebase;
 
     // for the current user
     // create this user node in the datebase
 
     firebase.auth().onAuthStateChanged(function(user){
-        firebase.database().ref("Users/" + user.displayName).set(
+        console.log("Inside User.js");
+        firebase.database().ref("Users/" + user.uid).set(
 		{
          email: user.email, 
-         uid: user.uid,
+         name: user.displayName,
          point: 0
         });
     });
