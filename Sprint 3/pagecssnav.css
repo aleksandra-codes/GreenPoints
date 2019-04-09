@@ -24,7 +24,7 @@ body    {   margin: 0px;
             width: 100%;
             background-color: #fff;}
 
-a       {   color: #316117; 
+a       {   color: #234710; 
             text-decoration:none;}
 
 #leaf   {   width: 100px; 
@@ -45,7 +45,7 @@ a       {   color: #316117;
             width: 30%; 
             
             padding-top: 10%;
-            font-size: 40px;
+            font-size: 45px;
             font-family:'organic_fruitregular';}
 
 #text {     
@@ -69,6 +69,7 @@ a       {   color: #316117;
     width: 15vw; 
 }
 .textc {    
+            font-size: 33px;
             margin: 2%} 
 
 

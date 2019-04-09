@@ -89,11 +89,6 @@ body     {  width: 100%;
 
 .buttons {  
             background: #90B644;
-            background-image: -webkit-linear-gradient(top, #90B644, #316117);
-            background-image: -moz-linear-gradient(top, #90B644, #316117);
-            background-image: -ms-linear-gradient(top, #90B644, #316117);
-            background-image: -o-linear-gradient(top, #90B644, #316117);
-            background-image: linear-gradient(to bottom, #90B644, #316117);
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
             border-radius: 10px;
@@ -104,7 +99,7 @@ body     {  width: 100%;
 /*            box-shadow: 1px 1px 7px 0px #616161;*/
 /*            -webkit-box-shadow: 1px 1px 7px 0px #616161;*/
 /*            -moz-box-shadow: 1px 1px 7px 0px #616161;*/
-            text-shadow: 1px 1px 6px #000000;
+/*            text-shadow: 1px 1px 6px #000000;*/
             text-decoration: none;
             display: inline-block;
             cursor: pointer;
@@ -119,12 +114,7 @@ body     {  width: 100%;
 }
 .buttons:hover {
            background: #316117;
-           background-image: -webkit-linear-gradient(top, #316117, #90b644);
-           background-image: -moz-linear-gradient(top, #316117, #90b644);
-           background-image: -ms-linear-gradient(top, #316117, #90b644);
-           background-image: -o-linear-gradient(top, #316117, #90b644);
-           background-image: linear-gradient(to bottom, #316117, #90b644);
-           text-decoration: none;
+
 }
      
 
