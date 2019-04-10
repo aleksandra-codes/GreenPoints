@@ -12,8 +12,8 @@
                 let out = document.getElementById("pointers");
                 points = snap.val();
                 console.log(points);
-                var textnode = document.createTextNode(points);                
-                out.appendChild("Points: " + textnode); 
+                var textnode = document.createTextNode("Points: " + points);                
+                out.appendChild(textnode); 
             });
 					
         
