@@ -13,7 +13,7 @@
                 points = snap.val();
                 console.log(points);
                 var textnode = document.createTextNode(points);                
-                out.appendChild(textnode); 
+                out.appendChild("Points: " + textnode); 
             });
 					
         
