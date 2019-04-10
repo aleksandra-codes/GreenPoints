@@ -1,23 +1,11 @@
 <!DOCTYPE html />
 <html>
  <head>
-  <title>Input Code</title>
-  <meta charset = "utf-8" /> 
-  <link rel="stylesheet" type="text/css" href="pagecssnav.css">  
-  <link rel="stylesheet" type="text/css" href="cssInputCode.css"> 
-     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-     
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-     
-    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-     
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="click.js"></script>
-     <script src="key.js"></script>
-    
-     <script src="userdata.js"></script>      
-   
-     
+    <title>Input Code</title>
+    <meta charset = "utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="pagecssnav.css">  
+    <link rel="stylesheet" type="text/css" href="cssInputCode.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  </head>
  
  <body>
@@ -66,28 +54,28 @@
   
   <!-- BODY -->
   <div id="body">
-   <textarea id="textBox" placeholder="Please Input Code Here" maxlength="10"></textarea>
-   
-   <div id="buttons">
-        <div id="balance">
-            <p id = "total">
-                Current<br>
-                Balance: <br>                
-            </p>
-        </div>
-   
-        <div id="redeem">
-            <p>
-                Redeem<br>
-                Your<br>
-                Points!
-            </p>
-        </div>
-
-        <input type="submit" id="enter" value="Enter">
-       <script src="codedata.js"></script> 
+    <div id="balance">
+        <div id="current">Current Balance:</div>
+        <div id="points">1930</div>
+    </div>
+    <div id="right">
+        <textarea id="textBox" class="inputBox" placeholder="Please Input Code Here" maxlength="10" rows="1"></textarea>
+        <input type="submit" id="enter" class="inputBox" value="Enter" >   
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $("#enter").click(function(){ 
+            var x = $("#textBox").val();
+            if(x == "barrelroll"){
+               $("#right").css({"animation-name":"roll","animation-duration":"1.5s","animation-timing-function":"linear"}); 
+               $("#balance").css({"animation-name":"roll","animation-duration":"1.5s","animation-timing-function":"linear"});           
+            }
+        });
+    });
+
+</script>
   
  </body>
 </html>
