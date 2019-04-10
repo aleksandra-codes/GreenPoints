@@ -4,8 +4,16 @@
   <title>Input Code</title>
   <meta charset = "utf-8" /> 
   <link rel="stylesheet" type="text/css" href="pagecssnav.css">  
-  <link rel="stylesheet" type="text/css" href="cssInputCode.css">  
-
+  <link rel="stylesheet" type="text/css" href="cssInputCode.css"> 
+     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+     
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+     <script src="key.js"></script>
+     <script src="user.js"></script>
+     <script src="userdata.js"></script>      
+   
+     
  </head>
  
  <body>
@@ -58,22 +66,22 @@
    
    <div id="buttons">
         <div id="balance">
-            <p>
-                Current</br>
-                Balance:</br>
-                1930
+            <p id = "total">
+                Current<br>
+                Balance: <br>                
             </p>
         </div>
    
         <div id="redeem">
             <p>
-                Redeem</br>
-                Your</br>
+                Redeem<br>
+                Your<br>
                 Points!
             </p>
         </div>
 
         <input type="submit" id="enter" value="Enter">
+       <script src="codedata.js"></script> 
     </div>
 </div>
   
