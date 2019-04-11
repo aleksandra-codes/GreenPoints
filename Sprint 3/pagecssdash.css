@@ -26,8 +26,9 @@ body {
     width: 100%;
     margin: 0;
     background-image: url(Images/dash_pic.jpg);
-    background-size: 100% 95vh;
-    background-repeat: no-repeat;
+/*    background-size: 100% 95vh;*/
+/*    background-repeat: no-repeat;*/
+    background-size: cover;
     
 }
 /*
@@ -42,11 +43,11 @@ a {
     text-decoration: none;
 }
 #welcome{
-    background: rgba(246,246,246,0.9);
+    background: rgba(246,246,246,0.8);
     border-radius: 5px;
-    width: 70%;
+    width: 75%;
     height: 70vh;
-    margin: 5% 15% 10% 15%;
+    margin: 5% 13% 10% 12%;
     
 }
 #scrollId{
@@ -56,6 +57,9 @@ a {
 #scroll{
     width: 200px;
     margin: 0 0 0 40%;
+}
+#scroll:hover{
+    transform: scale(1.2);
 }
 #mission{
     font-family: sans-serif;
@@ -88,7 +92,7 @@ a {
     justify-content: space-around;
     flex-direction: row;
     width: 80%;
-    margin: 20% 10% 10% 10%;
+    margin: 15% 10% 10% 10%;
     box-sizing: border-box;
     flex-wrap: wrap;
     
@@ -104,15 +108,18 @@ div.buttons {
       background: #f2fefe; 
       border-radius: 10px;  
       border-style:solid; 
-      border-width: 7px;
+      border-width: 2px;
       border-color: #90b644;
-      width: 30%; 
+      width: 23%; 
       height: 20vh; 
-      display: flex; align-items: center; justify-content: center;
-      margin: 2vw;
-      min-width: 200px
-      
-      
+      display: flex; align-items: center; 
+      justify-content: center;
+      margin: 0 2vw;
+      min-width: 150px
+  
+}
+div.buttons:hover{
+    transform: scale(1.02);
 }
 
 div.insides {
