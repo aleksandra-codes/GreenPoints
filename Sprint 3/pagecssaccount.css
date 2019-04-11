@@ -11,6 +11,7 @@ orange #e98341,
 light blue #f2fefe. 
 */
 
+
 @font-face {
             font-family: 'organic_fruitregular';
             src: url('organic_fruit-webfont.woff2') format('woff2'),
@@ -28,10 +29,11 @@ light blue #f2fefe.
         flex-wrap: wrap;
         width: 80%;
         margin: 0 10% 0 10%;
+        font-family: sans-serif;
 }
 
 #photo{
-            width:10%;
+            width:13%;
             height: auto;
             margin: 0 5% 5% 5%;
             display: block;
@@ -54,7 +56,7 @@ light blue #f2fefe.
             height: 10%;
             display:flex;
             align-items: center;
-            margin: 2%;
+            margin: 3% 2% 0% 15%;
             justify-content: center;
             align-self: center;
             text-align: center;
@@ -70,6 +72,18 @@ table{
             color: #316117;
 }
 
+#statusUpdate {
+/*            border: 1px solid #939393;*/
+            border-radius: 5px;
+            width: 74%;
+            margin: 0% 0% 13% 2%; 
+            padding: 2%;
+            height: 15%;
+            font-size: 23px;
+            font-family: sans-serif;
+            line-height: 1.5;
+}
+
 #accountTable td:first-child, th:first-child {
             border-left: none;
 }
@@ -79,8 +93,8 @@ table{
 }
 
 #accountTable td, th {           
-            height: 40px;
-            width: 20vh;
+            height: 50px;
+            width: 23vh;
             border: hidden;
             text-align: center;
             border-left: 1px solid #939393;
@@ -91,12 +105,16 @@ table{
 #accountTable td:hover{
             color: #939393;
 }
+#pointsAccount {
+    margin: 14% 0 0 0;
+}
 #photoAndpoints{
-            width: 25%;
+            width: 30%;
             padding-top: 0;
-            margin: 0 2% 0 6%;
+            margin: -18% -2% 0 6%;
             align-self: left;
             justify-content: center;
+            align-items: center;
     
 }
 fieldset{
@@ -108,6 +126,7 @@ fieldset{
     font-size: 20px;
     display: flex;
     flex-direction: row;
+
     
 }
 .eventsLast{
@@ -118,7 +137,7 @@ fieldset{
 }
 .eventsIcon{
     width: 50px;
-    margin: 2%;
+    margin: 0 2% 2% 2%;
     
 }
 #recentActivity{
@@ -134,8 +153,9 @@ fieldset{
             color: #316117;
 */
             min-width: 300px;
-            margin: 0 1% 0 3%;
-            padding: 20px 10px 0 10px;;
+            margin: 0% 1% 0% 0%;
+            padding: 20px 10px 0 10px;
+            align-items: center;
         }
      
 @media( max-width: 500px){
