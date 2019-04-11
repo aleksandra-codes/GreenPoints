@@ -11,8 +11,8 @@
 	  		dbRef.on("value", function(snap){
                 let out = document.getElementById("pointers");
                 points = snap.val();
-                
-                var textnode = document.createTextNode(points);                
+                console.log(points);
+                var textnode = document.createTextNode("Points: " + points);                
                 out.appendChild(textnode); 
             });
 					

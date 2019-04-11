@@ -1,11 +1,12 @@
 <!DOCTYPE html />
 <html>
  <head>
-  <title>Input Code</title>
-  <meta charset = "utf-8" /> 
-  <link rel="stylesheet" type="text/css" href="pagecssnav.css">  
-  <link rel="stylesheet" type="text/css" href="cssInputCode.css">  
-
+    <title>Input Code</title>
+    <meta charset = "utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="pagecssnav.css">  
+    <link rel="stylesheet" type="text/css" href="cssInputCode.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="click.js"></script>
  </head>
  
  <body>
@@ -43,7 +44,7 @@
                 </div>
             </a>
             
-            <a href ="pageaccount.html">
+            <a href ="pagehtmlaccount.html">
                 <div class = "pic" id = "acc">
                     <img id="account" src="Images/account.png" alt="account">
                 </div>
@@ -54,28 +55,39 @@
   
   <!-- BODY -->
   <div id="body">
-   <textarea id="textBox" placeholder="Please Input Code Here" maxlength="10"></textarea>
-   
-   <div id="buttons">
-        <div id="balance">
-            <p>
-                Current</br>
-                Balance:</br>
-                1930
-            </p>
-        </div>
-   
-        <div id="redeem">
-            <p>
-                Redeem</br>
-                Your</br>
-                Points!
-            </p>
-        </div>
-
-        <input type="submit" id="enter" value="Enter">
+    <div id="balance">
+        <div id="current">Current Balance:</div>
+        <div id="points">1930</div>
+    </div>
+    <div id="right">
+        <textarea id="textBox" class="inputBox" placeholder="Please Input Code Here" maxlength="10" rows="1"></textarea>
+        <input type="submit" id="enter" class="inputBox" value="Enter" >   
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $("#enter").click(function(){ 
+            var x = $("#textBox").val();
+            if(x == "barrelroll"){
+               $("#right").css({"animation-name":"roll","animation-duration":"1.5s","animation-timing-function":"linear"}); 
+               $("#balance").css({"animation-name":"roll","animation-duration":"1.5s","animation-timing-function":"linear"});           
+            }
+            if(x == "apple"){
+                console.log("Part 2");
+                var bal = document.getElementById("points");
+                var news = document.getElementById("current");
+                bal.innerHTML = "Processing...";
+                console.log("Part 3");
+                setTimeout(function(){ 
+                    news.innerHTML = "Congratulations! Your Balance Is:"
+                    bal.innerHTML = "1990";
+                }, 3000);
+            }
+        });
+    });
+
+</script>
   
  </body>
 </html>

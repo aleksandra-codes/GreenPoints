@@ -11,7 +11,8 @@
 		{
          email: user.email, 
          name: user.displayName,
-         point: 0
+         point: 1990
         });
     });
 })()
+

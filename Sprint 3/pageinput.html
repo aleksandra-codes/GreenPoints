@@ -4,7 +4,16 @@
   <title>Input Code</title>
   <meta charset = "utf-8" />
      <link rel="stylesheet" type="text/css" href="pagecssnav.css">    
-     <link rel="stylesheet" type="text/css" href="pagecssinput.css">   
+     <link rel="stylesheet" type="text/css" href="pagecssinput.css">  
+     
+     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>     
+     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+     
+     <script src="key.js"></script>
+     <!--<script src="user.js"></script>-->
+     <script src="click.js"></script>
  </head>
  
  <body>
@@ -56,7 +65,7 @@
 <div id="body">
     <div id = "container">
         <div id = "notif">
-            <div>Please input your given code below and press enter!</div>
+            <div id = "notif2">Please input your given code below and press enter!</div>
         </div>
 
         <div id="inputCode">
@@ -66,7 +75,7 @@
         <div id="options">
             <div class="buttons">
                 <p id="balance">
-                Current Balance:
+                Total Balance:
                 1930
                 </p>
             </div>
@@ -78,7 +87,7 @@
             </div>
 
             <div class="buttons">
-                <p id="enter">
+                <p id="enter" onclick="clickFunction()">
                  Enter
                 </p>
             </div>
