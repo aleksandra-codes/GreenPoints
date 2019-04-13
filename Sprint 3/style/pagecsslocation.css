@@ -80,8 +80,6 @@ Map and search results
     display: flex;
     flex-direction: column;
     min-width: 400px;
-
-
 }
 
 #mapimg {
@@ -105,7 +103,6 @@ Map and search results
 Search results css 
 */
 #searchResults {
-
     width: 40%;
     padding: 0;
     font-size: 25px;
@@ -121,15 +118,15 @@ Search results css
     flex-direction: row;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> abdcf264e281bb3156e079a8b583a50e92deeb2b
 #address2 {
-
     padding: 5%;
 }
 
 #address3 {
-
-
     padding: 5%;
 }
 
@@ -140,7 +137,19 @@ Search results css
     margin: 0;
 }
 
+<<<<<<< HEAD
+#mapimg {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
 
+#hmap {
+    font-size: 20px;
+}
+=======
+
+>>>>>>> abdcf264e281bb3156e079a8b583a50e92deeb2b
 
 #star {
     width: 20%;
@@ -157,7 +166,6 @@ Search results css
     flex-direction: row;
     justify-content: center;
     margin-right: 2%;
-
 }
 
 .buttons {
@@ -169,34 +177,28 @@ Search results css
     font-size: 20px;
     font-weight: 100;
     padding: 10px;
-
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     margin: 10px;
-
 }
 
 #inputSearch {
     width: 70%;
     font-size: 25px;
     margin: 0% 0 0 10%;
-
 }
 
 .buttons:hover {
     background: #316117;
-
 }
 
 
 #picinfo {
     width: 40%;
-
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-
 }
 
 .opt {
@@ -206,6 +208,30 @@ Search results css
     font-size: 30px;
 }
 
+<<<<<<< HEAD
+#top {
+    margin: 0 5% 0 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 0.9;
+}
+
+#portrait {
+    /*            height: 200px; */
+    width: 150px;
+    height: 120px;
+    margin-right: 30px;
+}
+
+#bio {
+    font-family: 'organic_fruitregular';
+    font-size: 35px;
+    padding: 5%;
+}
+=======
+>>>>>>> abdcf264e281bb3156e079a8b583a50e92deeb2b
 
 
 #bio {
@@ -236,11 +262,13 @@ Media queries for responsive design
 
     #map {
         width: 90%;
+<<<<<<< HEAD
+=======
 
+>>>>>>> abdcf264e281bb3156e079a8b583a50e92deeb2b
     }
 
     #searchResults {
-
         width: 90%;
     }
 
@@ -250,6 +278,5 @@ Media queries for responsive design
 
     #hmap {
         font-size: 30px;
-
     }
 }

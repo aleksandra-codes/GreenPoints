@@ -30,6 +30,7 @@ a       {   color: #234710;
 #leaf   {   width: 100px; 
             height: 100px;}
 
+/*Div containing entire header*/
 #header {
             display: flex; 
             flex-direction: row; 
@@ -39,7 +40,7 @@ a       {   color: #234710;
             height: 100px; 
             background-color: #90b644;}
 
-
+/*Main title*/
 #gp     {    
             height:100%; 
             width: 30%; 
@@ -48,6 +49,7 @@ a       {   color: #234710;
             font-size: 45px;
             font-family:'organic_fruitregular';}
 
+/*Text for header buttons(left side)*/
 #text {     
             height: 100%;
             width: 30%;
@@ -58,44 +60,64 @@ a       {   color: #234710;
 /*            align-items: center; */
             font-family:'organic_fruitregular';
             }
+
 #text a #input{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 13vw;
 }
+
 #text a #rewards{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 17vw; 
 }
+
 .textc {    
-            font-size: 33px;
-            margin: 2%} 
+    font-size: 33px;
+    margin: 2%
+} 
 
+/*Icons for header buttons(right side)*/
+#icons {    
+    width: 30%;        
+    height: 100%;      
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+}  
 
-#icons {    width: 30%; 
-            height: 100%;
-            display: flex; align-items: center; 
-            justify-content: flex-end;}  
-.pic    {   margin: 30px; }
-#home       {
-            width: 40px; 
-            height: auto;}
-#account    {width: 40px;   
-            height: auto;}
+.pic {   
+    margin: 30px; 
+}
+
+#home {
+    width: 40px; 
+    height: auto;
+}
+
+#account {
+    width: 40px;   
+    height: auto;
+}
+
 /*span:hover {color:}*/
+
 a:hover{
     color:#f2fefe; 
 }
 
 @media screen and (max-width: 1520px) {
-    #text { font-size: 25px;}
-    
+    #text { 
+        font-size: 25px;
+    }  
 }
 
 @media screen and (max-width: 1000px) {
 /*    #text { display:none;}*/
-    #leaf { height: 100px; width: 100px;}
+    #leaf { 
+        height: 100px; width: 100px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -109,8 +131,8 @@ a:hover{
         display: none;
     }
     #icons { 
-        display: none;}
-
+        display: none;
+    }
     #header{
         justify-content: space-between;
         align-content: flex-end;
@@ -125,13 +147,13 @@ a:hover{
         padding-bottom: 20px;
         width: 50%; 
         margin-right: 10%;
-}
+    }
     #text a #rewards{
         font-size: 25px;
         padding-right: 20px;
         padding-bottom: 20px;
         width: 50%; 
         margin-left: 10%;
-}
+    }
 }
 }
