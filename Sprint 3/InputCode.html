@@ -1,93 +1,103 @@
 <!DOCTYPE html />
 <html>
- <head>
+
+<head>
     <title>Input Code</title>
-    <meta charset = "utf-8" /> 
-    <link rel="stylesheet" type="text/css" href="pagecssnav.css">  
-    <link rel="stylesheet" type="text/css" href="cssInputCode.css">  
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style/pagecssnav.css">
+    <link rel="stylesheet" type="text/css" href="style/cssInputCode.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="click.js"></script>
- </head>
- 
- <body>
+    <script src="js_files/click.js"></script>
+</head>
+
+<body>
     <!--HEADER-->
-    <div id="header"> 
-        
+    <div id="header">
+
         <div id="logo">
             <img id="leaf" src="Images/logoe2.png" alt="leaf">
         </div>
-        
+
         <a href="pagehtmldash.html">
-        <div id="gp">
-            <span id="gpt">GreenPoints</span>
-        </div>
+            <div id="gp">
+                <span id="gpt">GreenPoints</span>
+            </div>
         </a>
-        
+
         <div id="text">
             <a href="InputCode.html">
-                <div class = "textc" id = "input">
-                     Input Code 
+                <div class="textc" id="input">
+                    Input Code
                 </div>
             </a>
-            
+
             <a href="pagerewards.html">
-                <div class = "textc" id = "rewards">
-                    Redeem Rewards 
+                <div class="textc" id="rewards">
+                    Redeem Rewards
                 </div>
             </a>
         </div>
-  
+
         <div id="icons">
-            <a href ="pagehtmldash.html">
-                <div class = "pic" id = "hom">
+            <a href="pagehtmldash.html">
+                <div class="pic" id="hom">
                     <img id="home" src="Images/home.png" height="60" width="60" alt="home">
                 </div>
             </a>
-            
-            <a href ="pagehtmlaccount.html">
-                <div class = "pic" id = "acc">
+
+            <a href="pagehtmlaccount.html">
+                <div class="pic" id="acc">
                     <img id="account" src="Images/account.png" alt="account">
                 </div>
             </a>
         </div>
 
     </div>
-  
-  <!-- BODY -->
-  <div id="body">
-    <div id="balance">
-        <div id="current">Current Balance:</div>
-        <div id="points">1930</div>
-    </div>
-    <div id="right">
-        <textarea id="textBox" class="inputBox" placeholder="Please Input Code Here" maxlength="10" rows="1"></textarea>
-        <input type="submit" id="enter" class="inputBox" value="Enter" >   
-    </div>
-</div>
 
-<script>
-    $(document).ready(function(){
-        $("#enter").click(function(){ 
-            var x = $("#textBox").val();
-            if(x == "barrelroll"){
-               $("#right").css({"animation-name":"roll","animation-duration":"1.5s","animation-timing-function":"linear"}); 
-               $("#balance").css({"animation-name":"roll","animation-duration":"1.5s","animation-timing-function":"linear"});           
-            }
-            if(x == "apple"){
-                console.log("Part 2");
-                var bal = document.getElementById("points");
-                var news = document.getElementById("current");
-                bal.innerHTML = "Processing...";
-                console.log("Part 3");
-                setTimeout(function(){ 
-                    news.innerHTML = "Congratulations! Your Balance Is:"
-                    bal.innerHTML = "1990";
-                }, 3000);
-            }
+    <!-- BODY -->
+    <div id="body">
+        <div id="balance">
+            <div id="current">Current Balance:</div>
+            <div id="points">1930</div>
+        </div>
+        <div id="right">
+            <textarea id="textBox" class="inputBox" placeholder="Please Input Code Here" maxlength="10" rows="1"></textarea>
+            <input type="submit" id="enter" class="inputBox" value="Enter">
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#enter").click(function() {
+                var x = $("#textBox").val();
+                if (x == "barrelroll") {
+                    $("#right").css({
+                        "animation-name": "roll",
+                        "animation-duration": "1.5s",
+                        "animation-timing-function": "linear"
+                    });
+                    $("#balance").css({
+                        "animation-name": "roll",
+                        "animation-duration": "1.5s",
+                        "animation-timing-function": "linear"
+                    });
+                }
+                if (x == "apple") {
+                    console.log("Part 2");
+                    var bal = document.getElementById("points");
+                    var news = document.getElementById("current");
+                    bal.innerHTML = "Processing...";
+                    console.log("Part 3");
+                    setTimeout(function() {
+                        news.innerHTML = "Congratulations! Your Balance Is:"
+                        bal.innerHTML = "1990";
+                    }, 3000);
+                }
+            });
         });
-    });
 
-</script>
-  
- </body>
+    </script>
+
+</body>
+
 </html>

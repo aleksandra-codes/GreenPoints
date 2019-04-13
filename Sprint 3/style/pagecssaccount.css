@@ -1,0 +1,182 @@
+/*
+Color scheme
+primary grey #f7f7f7
+Color hex codes: 
+green dark #316117, 
+light green #90b644, 
+white #ffffff, 
+orange #e98341, 
+light blue #f2fefe. 
+*/
+
+
+@font-face {
+    font-family: 'organic_fruitregular';
+    src: url('organic_fruit-webfont.woff2') format('woff2'),
+        url('organic_fruit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#spacing {
+    height: 10%;
+    width: 100%;
+}
+
+#accountPageItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    font-family: sans-serif;
+}
+
+#photo {
+    width: 13%;
+    height: auto;
+    margin: 0 5% 5% 5%;
+    display: block;
+
+}
+
+#headshot {
+    background: headshot.jpg;
+    object-fit: contain;
+    border-radius: 50% 50% 50% 50%;
+    border: 4px solid #90b644;
+    max-width: 200px;
+}
+
+#welcomeMessage {
+    font-size: 40px;
+    color: #316117;
+    font-family: 'organic_fruitregular';
+    width: 100%;
+    float: right;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin: 3% 2% 0% 15%;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    line-height: .9;
+
+}
+
+table {
+    border-collapse: separate;
+    border: 1px solid #939393;
+    border-radius: 7px;
+    -moz-border-radius: 6px;
+    background-color: #f2fefe;
+    color: #316117;
+}
+
+#statusUpdate {
+    /*            border: 1px solid #939393;*/
+    border-radius: 5px;
+    width: 74%;
+    margin: 0% 0% 13% 2%;
+    padding: 2%;
+    height: 15%;
+    font-size: 23px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+#accountTable td:first-child,
+th:first-child {
+    border-left: none;
+}
+
+#accountTable th {
+    border-top: none;
+}
+
+#accountTable td,
+th {
+    height: 50px;
+    width: 23vh;
+    border: hidden;
+    text-align: center;
+    border-left: 1px solid #939393;
+    border-top: 1px solid #939393;
+    min-width: 200px;
+}
+
+#accountTable td:hover {
+    color: #939393;
+}
+
+#pointsAccount {
+    margin: 10% 0 0 0;
+}
+
+#photoAndpoints {
+    width: 30%;
+    padding-top: 0;
+    margin: -12% -2% 0 6%;
+    align-self: left;
+    justify-content: center;
+    align-items: center;
+
+}
+
+fieldset {
+    border: hidden;
+}
+
+.events {
+    border-bottom: 1px solid #f7f7f7;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: -2%;
+
+}
+
+.eventsLast {
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.eventsIcon {
+    width: 50px;
+    margin: 0 2% 2% 2%;
+
+}
+
+#recentActivity {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 20%px;
+    width: 50%;
+    border: 7px solid #90b644;
+    border-radius: 10px;
+
+    min-width: 300px;
+    margin: 0% 1% 2% 0%;
+    padding: 20px 10px 0 10px;
+    align-items: center;
+}
+
+@media(max-width: 500px) {
+    #welcomeMessage {
+        font-size: 30px;
+
+    }
+
+    #recentActivity {
+
+        font-size: 20px;
+        min-width: 300px;
+
+    }
+}

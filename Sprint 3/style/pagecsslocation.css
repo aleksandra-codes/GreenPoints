@@ -1,0 +1,242 @@
+/*
+Color scheme
+primary grey #f7f7f7
+Color hex codes: 
+green dark #316117, 
+light green #90b644, 
+white #ffffff, 
+orange #e98341, 
+light blue #f2fefe. 
+*/
+
+@font-face {
+    font-family: 'organic_fruitregular';
+    src: url('organic_fruit-webfont.woff2') format('woff2'),
+        url('organic_fruit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    /*            font-family: 'organic_fruitregular'*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+#spacing {
+    height: 25px;
+}
+
+#mbody {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 0 10% 0 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#map {
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+
+
+}
+
+#burn {
+    border: 0.5px solid #90b644;
+}
+
+#searchResults {
+
+    width: 40%;
+    padding: 0;
+    font-size: 25px;
+}
+
+#resultsHead {
+    padding: 5% 0 2% 4%;
+    font-size: 25px;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#address2 {
+
+    padding: 5%;
+}
+
+#address3 {
+
+
+    padding: 5%;
+}
+
+.recycle {
+    width: 50%;
+    height: 80px;
+    align-self: right;
+    margin: 0;
+}
+
+#mapimg {
+
+
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+#hmap {
+    font-size: 20px;
+
+}
+
+#star {
+    width: 20%;
+}
+
+#desc {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 2%;
+
+}
+
+.buttons {
+    background: #90B644;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+#inputSearch {
+    width: 70%;
+    font-size: 25px;
+    margin: 0% 0 0 10%;
+
+}
+
+.buttons:hover {
+    background: #316117;
+
+}
+
+
+#picinfo {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+.opt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#top {
+    margin: 0 5% 0 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 0.9;
+}
+
+#portrait {
+    /*            height: 200px; */
+    width: 150px;
+    height: 120px;
+    margin-right: 30px;
+
+
+}
+
+#bio {
+    font-family: 'organic_fruitregular';
+    font-size: 35px;
+    padding: 5%;
+}
+
+
+#bio {
+    width: 55%;
+}
+
+#address {
+    width: 90%;
+    margin: 5%;
+}
+
+#mapContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+@media(max-width: 800px) {
+    #mbody {
+        width: 96%;
+        margin: 0 2% 0 2%;
+
+    }
+
+    #map {
+        width: 90%;
+
+
+    }
+
+    #searchResults {
+
+        width: 90%;
+
+    }
+
+    #bio {
+        font-size: 30px;
+    }
+
+    #hmap {
+        font-size: 30px;
+
+    }
+}

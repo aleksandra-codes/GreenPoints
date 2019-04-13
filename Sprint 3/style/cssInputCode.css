@@ -12,7 +12,7 @@ light blue #f2fefe.
 
 body {
      background-color:white;
-     background-image: url("Images/InputCodeBackground.jpg");
+     background-image: url("../Images/InputCodeBackground.jpg");
      background-size: cover;
      display: flex;
      flex-direction: column;     
