@@ -37,7 +37,7 @@ a {
     font-weight: bold;
     text-decoration: none;
 }
-
+/*Front page welcome sign*/
 #welcome {
     background: rgba(246, 246, 246, 0.8);
     border-radius: 5px;
@@ -47,11 +47,13 @@ a {
 
 }
 
+/*Arrow image*/
 #scrollId {
     align-items: center;
 
 }
 
+/*Arrow image*/
 #scroll {
     width: 200px;
     margin: 0 0 0 40%;
@@ -61,18 +63,7 @@ a {
     transform: scale(1.2);
 }
 
-#mission {
-    font-family: sans-serif;
-    text-align: center;
-    margin: 5% 5% 0% 5%;
-    font-size: 40px;
-}
-
-#explain {
-    font-size: 30px;
-    margin: 3% 3% 0 3%;
-}
-
+/*Main title*/
 #title {
     font-size: 70px;
     color: #316117;
@@ -89,6 +80,21 @@ a {
     font-size: 110px;
 }
 
+/*Sub-title*/
+#mission {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5% 5% 0% 5%;
+    font-size: 40px;
+}
+
+/*Brief explanation of our project*/
+#explain {
+    font-size: 30px;
+    margin: 3% 3% 0 3%;
+}
+
+/*Div for our buttons*/
 #container {
     display: flex;
     align-items: center;

@@ -47,8 +47,6 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 400px;
-
-
 }
 
 #burn {
@@ -56,7 +54,6 @@ body {
 }
 
 #searchResults {
-
     width: 40%;
     padding: 0;
     font-size: 25px;
@@ -72,16 +69,11 @@ body {
     flex-direction: row;
 }
 
-
-
 #address2 {
-
     padding: 5%;
 }
 
 #address3 {
-
-
     padding: 5%;
 }
 
@@ -93,8 +85,6 @@ body {
 }
 
 #mapimg {
-
-
     object-fit: cover;
     overflow: hidden;
     width: 100%;
@@ -102,7 +92,6 @@ body {
 
 #hmap {
     font-size: 20px;
-
 }
 
 #star {
@@ -120,7 +109,6 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-right: 2%;
-
 }
 
 .buttons {
@@ -132,34 +120,28 @@ body {
     font-size: 20px;
     font-weight: 100;
     padding: 10px;
-
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     margin: 10px;
-
 }
 
 #inputSearch {
     width: 70%;
     font-size: 25px;
     margin: 0% 0 0 10%;
-
 }
 
 .buttons:hover {
     background: #316117;
-
 }
 
 
 #picinfo {
     width: 40%;
-
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-
 }
 
 .opt {
@@ -183,8 +165,6 @@ body {
     width: 150px;
     height: 120px;
     margin-right: 30px;
-
-
 }
 
 #bio {
@@ -216,19 +196,14 @@ body {
     #mbody {
         width: 96%;
         margin: 0 2% 0 2%;
-
     }
 
     #map {
         width: 90%;
-
-
     }
 
     #searchResults {
-
         width: 90%;
-
     }
 
     #bio {
@@ -237,6 +212,5 @@ body {
 
     #hmap {
         font-size: 30px;
-
     }
 }

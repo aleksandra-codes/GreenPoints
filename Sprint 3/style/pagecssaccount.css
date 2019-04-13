@@ -23,6 +23,7 @@ light blue #f2fefe.
     width: 100%;
 }
 
+/*Div for user photo, description, and account options/settings*/
 #accountPageItems {
     display: flex;
     flex-direction: row;
@@ -64,7 +65,7 @@ light blue #f2fefe.
     line-height: .9;
 
 }
-
+/*Table for account options/setings*/
 table {
     border-collapse: separate;
     border: 1px solid #939393;
@@ -73,7 +74,7 @@ table {
     background-color: #f2fefe;
     color: #316117;
 }
-
+/*User story/description*/
 #statusUpdate {
     /*            border: 1px solid #939393;*/
     border-radius: 5px;
@@ -128,30 +129,7 @@ fieldset {
     border: hidden;
 }
 
-.events {
-    border-bottom: 1px solid #f7f7f7;
-    height: 10vh;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    padding-top: 2%;
-    padding-bottom: -2%;
-
-}
-
-.eventsLast {
-    height: 10vh;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-.eventsIcon {
-    width: 50px;
-    margin: 0 2% 2% 2%;
-
-}
-
+/*Div containing user history/notification*/
 #recentActivity {
     display: flex;
     justify-content: space-around;
@@ -165,6 +143,32 @@ fieldset {
     margin: 0% 1% 2% 0%;
     padding: 20px 10px 0 10px;
     align-items: center;
+}
+
+/*Individual user history/notification*/
+.events {
+    border-bottom: 1px solid #f7f7f7;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: -2%;
+
+}
+
+/*Last event/notification shown in div*/
+.eventsLast {
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.eventsIcon {
+    width: 50px;
+    margin: 0 2% 2% 2%;
+
 }
 
 @media(max-width: 500px) {
