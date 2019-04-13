@@ -1,40 +1,36 @@
-function signUp()
-{
+//adding user on initial sign up
+function signUp() {
 
-  var userEmail = document.getElementById("emailTextFieldSignUp").value;
-  var userPassword = document.getElementById("passwordTextFieldSignUp").value;
-  var userName = document.getElementById("nameTextFieldSignUp").value;
+    var userEmail = document.getElementById("emailTextFieldSignUp").value;
+    var userPassword = document.getElementById("passwordTextFieldSignUp").value;
+    var userName = document.getElementById("nameTextFieldSignUp").value;
 
-  firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword)
-  function(user) {
-    var user = firebase.auth().currentUser;
-    setUserInfo(userName, userEmail, user.uid)
-  })
-  
+    firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword)
+
+    function (user) {
+        var user = firebase.auth().currentUser;
+        setUserInfo(userName, userEmail, user.uid)
+    })
+
 }
+//setting user info with the username, email and uid
+function setUserInfo(username, email, uid) {
+    var userId = firebase.auth().currentUser.uid;
+    var ref = firebase.database().ref();
+    var userRef = ref.child("Users").child(A001);
 
-function setUserInfo(username, email, uid)
-{
-  var userId = firebase.auth().currentUser.uid;
-  var ref = firebase.database().ref();
-  var userRef = ref.child("Users").child(A001);
+    userRef.set({
+        username: username,
 
-  userRef.set({
-    username: username,
-    
-    email: email,
- 
-  }, function(error)
-  {
-    if (error)
-    {
-      var errorMessage = error.message;
+        email: email,
 
-      window.alert("There went something wrong : " + errorMessage);
-    }
-    else
-    {
-      window.alert("Account successfully created");
-    }
-  });
+    }, function (error) {
+        if (error) {
+            var errorMessage = error.message;
+
+            window.alert("There went something wrong : " + errorMessage);
+        } else {
+            window.alert("Account successfully created");
+        }
+    });
 }
